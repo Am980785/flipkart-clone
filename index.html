@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <style>
+        :root{
+            --bg-color:#F1F2F4;
+            --main-color:#FFFFFF;
+            --input-color:#F0F5FF;
+            --text-color:#818489;
+        }
+        #s1{
+            height: 25vh;
+            background-color: var(--main-color);
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            padding: 0px 40px;
+            overflow: auto;
+        }
+        #s1>div{
+            width: 10%;
+            height: 60%;
+            text-align: center;
+            cursor: pointer;
+
+            &>img{
+                height: 80%;
+            }
+            &>h1{
+                font-size: 18px;
+            }
+        }
+
+        #s2{
+            height: 40vh;
+            display: flex;
+            overflow: hidden;
+            padding: 10px;
+            margin: 10px;
+
+            &>img{
+                width: 100vw;
+                animation-name: moveImages;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+        }
+
+        @keyframes moveImages {
+            0%{
+                transform: translateX(0px);
+            }
+            25%{
+                transform: translateX(-100vw);
+            }
+            50%{
+                transform: translateX(-200vw);
+            }
+            100%{
+                transform: translateX(-300vw);
+            }
+            
+        }
+
+        #s3{
+            margin: 10px;
+            background-color: var(--main-color);
+            height: 50vh;
+            padding: 20px 10px;
+
+            &>h1{
+                height: 20%;
+                margin-bottom: 18px;
+                font-size: 30px;
+                margin-left: 20px;
+            }
+
+            &>div{
+                display: flex;
+                height: 80%;
+                gap: 20px;
+                padding: 0px 20px;
+                text-align: center;
+
+                &>div{
+                    height: 100%;
+                    width: 18%;
+                    cursor: pointer;
+
+                    &>img{
+                        height: 60%;
+                    }
+                    &>h1{
+                        font-size: 20px;
+                        color: #4c4d4e;
+                        margin: 10px 0px;
+                    }
+                    &>h2{
+                        font-size: 22px;
+                    }
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section  -->
+    <header>
+        <nav>
+            <div id="header1">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="">
+            </div>
+            <div id="header2">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search For Products,Brands and More">
+                </div>
+            </div>
+            <div id="header3">
+                <div>
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span>Login</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Cart</span>
+                </div>
+                <div id="become-seller">
+                    <i class="fa-solid fa-shop"></i>
+                    <span>Become a Seller</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+ 
+    <!-- Main Section  -->
+     <main> 
+        <!-- Categories Section  -->
+        <section id="s1">
+            <div>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/a22a213ca6221b65.png?q=100" alt="">
+                <h1>Minutes</h1>
+            </div>
+            <div>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/5f2ee7f883cdb774.png?q=100" alt="">
+                <h1>Mobile & Tablets</h1>
+            </div>
+            <div>
+                <img src="https://static.vecteezy.com/system/resources/previews/015/414/036/non_2x/clothes-and-accessories-fashion-icon-set-men-and-women-clothes-and-footware-casual-seasonal-clothes-boutique-assortment-showroom-personal-wardrobe-dressing-room-illustration-vector.jpg" alt="">
+                <h1>Fashion</h1>
+            </div>
+            <div>
+                <img src="https://tse2.mm.bing.net/th/id/OIP.JA8YTHyXaMNDHgjabg-7EAHaIO?pid=Api&P=0&h=220" alt="">
+                <h1>Electronic</h1>
+            </div>
+            <div>
+                <img src="https://tse3.mm.bing.net/th/id/OIP.X3k98PUbkf1kGAJMZWmOLwHaEh?pid=Api&P=0&h=220" alt="">
+                <h1>Home & Furnitures</h1>
+            </div>
+            <div>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e90944802d996756.jpg?q=100" alt="">
+                <h1>TVs & Appliances</h1>
+            </div>
+            <div>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/3c647c2e0d937dc5.png?q=100" alt="">
+                <h1>Flight Bookings</h1>
+            </div>
+            <div>
+                <img src="https://tse4.mm.bing.net/th/id/OIP.0OvM0R_fNYMsu31vXDiX0AHaHa?pid=Api&P=0&h=220" alt="">
+                <h1>Beauty,Food...</h1>
+            </div>
+            <div>
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e730a834ad950bae.png?q=100" alt="">
+                <h1>Grocery</h1>
+            </div>
+            
+            
+        </section>
+
+        <!-- Moving Images Animation  -->
+         <section id="s2">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/74f0ad81e44e6e6f.jpg?q=60" alt="">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/076c4f2ee87225d7.jpg?q=60" alt="">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/5b309e98775e22e4.jpg?q=60" alt="">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/a77379aa32ab1b86.jpg?q=60" alt="">
+         </section>
+
+         <!-- Items Section  -->
+          <section id="s3">
+            <h1>Best Of Electronics</h1>
+            <div>
+                <div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+                <div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+<div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+<div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+<div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+<div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+
+            </div>
+          </section>
+          <section id="s3">
+            <h1>Best Of Electronics</h1>
+            <div>
+                <div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+                <div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+<div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+<div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+<div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+<div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+
+            </div>
+          </section>
+          <section id="s3">
+            <h1>Best Of Electronics</h1>
+            <div>
+                <div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/kzzw5u80/coffee/s/b/x/-original-imagbwf3wvhzfh5z.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+                <div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/l111lzk0/cycle/m/r/e/xc-900-grey-lite-26-15-5-cradiac-21-gear-120-original-imagczuzpxeweczm.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+<div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+<div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+<div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+<div>
+                    <img src="https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                    <h1>Monitors</h1>
+                    <h2>From 6599</h2>
+                </div>
+
+            </div>
+          </section>
+     </main>
+
+</body>
+</html>
